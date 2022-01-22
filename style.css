@@ -1,0 +1,515 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  background-color: #0a192f;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+}
+
+.first-section {
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #ccd6f6;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  color: #64ffda;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 14px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.head,
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 1100px;
+}
+
+.head .text {
+  color: #8892b0;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 0px;
+  font-weight: 600;
+}
+
+.head .year {
+  width: 5%;
+}
+
+.head .title {
+  width: 20%;
+}
+
+.head .description {
+  width: 40%;
+  padding-right: 25px;
+}
+
+.head .tech {
+  width: 20%;
+}
+
+.head .link {
+  width: 10%;
+}
+
+.row {
+  padding: 5px 0px;
+}
+
+.row:hover {
+  background-color: #112240;
+}
+
+.row .box {
+  display: flex;
+  align-items: center;
+}
+
+.row .year {
+  width: 5%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64ffda;
+}
+
+.row .title {
+  width: 20%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ccd6f6;
+}
+
+.row .description {
+  width: 40%;
+  font-size: 17px;
+  word-wrap: break-word;
+  line-height: 1.3;
+  color: #8892b0;
+  padding-right: 25px;
+}
+
+.row .tech {
+  width: 20%;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #8892b0;
+}
+
+.row .link {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.row .link .external-link {
+  margin-right: 15px;
+}
+
+.row .link .icon {
+  cursor: pointer;
+}
+
+.row .link .icon:hover svg path {
+  stroke: #64ffda;
+}
+
+.row .link .icon:hover svg line {
+  stroke: #64ffda;
+}
+
+.row .link .icon:hover svg polyline {
+  stroke: #64ffda;
+}
+
+.row .link svg path,
+polyline,
+line {
+  stroke: #8892b0;
+}
+
+.btn-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  margin: 30px 0px 50px;
+}
+
+.btn-list .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 13px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: 0px 10px;
+}
+
+.btn-list .button:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  outline: currentcolor none medium;
+}
+
+@media screen and (max-width: 319px) {
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .first-section {
+    margin: 40px 0px;
+  }
+
+  .head,
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 340px;
+    padding: 10px 15px;
+  }
+
+  .content {
+    padding: 0px 5px;
+  }
+  .row .year {
+    min-width: 50px;
+    width: 10%;
+  }
+
+  .head .year {
+    min-width: 50px;
+    width: 10%;
+  }
+
+  .head .description {
+    padding-right: 15px;
+    width: 65%;
+    display: none;
+  }
+
+  .row .description {
+    padding-right: 15px;
+    width: 65%;
+    display: none;
+  }
+
+  .head .title {
+    min-width: 150px;
+    width: 75%;
+  }
+
+  .row .title {
+    min-width: 150px;
+    width: 75%;
+  }
+
+  .head .tech {
+    min-width: 180px;
+    display: none;
+  }
+
+  .row .tech {
+    min-width: 180px;
+    display: none;
+  }
+
+  .head .link {
+    width: 15%;
+  }
+
+  .row .link {
+    width: 15%;
+  }
+
+  .row .link .external-link {
+    margin-right: 5px;
+  }
+
+  .btn-list .button {
+    margin: 10px 10px 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 575px) {
+  .first-section {
+    margin: 40px 0px;
+  }
+
+  .head,
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 420px;
+    padding: 10px 15px;
+  }
+
+  .content {
+    padding: 0px 50px;
+  }
+  .row .year {
+    min-width: 50px;
+    width: 10%;
+  }
+
+  .head .year {
+    min-width: 50px;
+    width: 10%;
+  }
+
+  .head .description {
+    padding-right: 15px;
+    width: 65%;
+    display: none;
+  }
+
+  .row .description {
+    padding-right: 15px;
+    width: 65%;
+    display: none;
+  }
+
+  .head .title {
+    min-width: 150px;
+    width: 75%;
+  }
+
+  .row .title {
+    min-width: 150px;
+    width: 75%;
+  }
+
+  .head .tech {
+    min-width: 180px;
+    display: none;
+  }
+
+  .row .tech {
+    min-width: 180px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .head,
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 565px;
+  }
+
+  .content {
+    padding: 0px 20px;
+  }
+  .row .year {
+    min-width: 50px;
+  }
+
+  .head .year {
+    min-width: 50px;
+  }
+
+  .head .description {
+    padding-right: 15px;
+    width: 50%;
+  }
+
+  .row .description {
+    padding-right: 15px;
+    width: 50%;
+  }
+
+  .head .title {
+    min-width: 150px;
+  }
+
+  .row .title {
+    min-width: 150px;
+  }
+
+  .head .tech {
+    min-width: 180px;
+    display: none;
+  }
+
+  .row .tech {
+    min-width: 180px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  .head,
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 760px;
+  }
+
+  .content {
+    padding: 0px 50px;
+  }
+  .row .year {
+    min-width: 50px;
+  }
+
+  .head .year {
+    min-width: 50px;
+  }
+
+  .head .description {
+    padding-right: 15px;
+  }
+
+  .row .description {
+    padding-right: 15px;
+  }
+
+  .head .title {
+    min-width: 180px;
+  }
+
+  .row .title {
+    min-width: 180px;
+  }
+
+  .head .tech {
+    min-width: 180px;
+  }
+
+  .row .tech {
+    min-width: 180px;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  .head,
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 980px;
+  }
+
+  .content {
+    padding: 0px 60px;
+  }
+  .row .year {
+    min-width: 70px;
+  }
+
+  .head .description {
+    padding-right: 15px;
+  }
+
+  .row .description {
+    padding-right: 15px;
+  }
+
+  .head .year {
+    min-width: 70px;
+  }
+
+  .head .title {
+    min-width: 150px;
+  }
+
+  .row .title {
+    min-width: 150px;
+  }
+
+  .head .tech {
+    min-width: 200px;
+  }
+
+  .row .tech {
+    min-width: 200px;
+  }
+
+  .head .link {
+    padding-left: 10px;
+  }
+
+  .row .link {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .year {
+    min-width: 70px;
+  }
+
+  .head .year {
+    min-width: 70px;
+  }
+
+  .head .title {
+    min-width: 150px;
+  }
+
+  .row .title {
+    min-width: 150px;
+  }
+
+  .head .tech {
+    min-width: 250px;
+  }
+
+  .row .tech {
+    min-width: 250px;
+  }
+
+  .head .link {
+    padding-left: 10px;
+  }
+
+  .row .link {
+    padding-left: 10px;
+  }
+}
