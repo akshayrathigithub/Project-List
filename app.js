@@ -1,6 +1,6 @@
 // links
 const cpiSpiCalculatorLinkUrl = "https://projects.akshayrathi.com/cpi-spi-calculator/";
-const taxiSharingPlatformLinkUrl = "https://projects.akshayrathi.com/tax-sharing-platform/";
+const taxiSharingPlatformLinkUrl = "https://projects.akshayrathi.com/taxi-sharing-platform/";
 const socketIoLinkUrl = "https://projects.akshayrathi.com/socket-io-app/";
 const taskManagerLinkUrl = "https://projects.akshayrathi.com/task-manager/";
 const portfolioLinkUrl = "https://akshayrathi.com/";
