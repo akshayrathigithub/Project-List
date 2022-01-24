@@ -1,6 +1,8 @@
 // links
-const cpiSpiCalculatorLinkUrl = "https://projects.akshayrathi.com/cpi-spi-calculator/";
-const taxiSharingPlatformLinkUrl = "https://projects.akshayrathi.com/taxi-sharing-platform/";
+const cpiSpiCalculatorLinkUrl =
+  "https://projects.akshayrathi.com/cpi-spi-calculator/";
+const taxiSharingPlatformLinkUrl =
+  "https://projects.akshayrathi.com/taxi-sharing-platform/";
 const socketIoLinkUrl = "https://projects.akshayrathi.com/socket-io-app/";
 const taskManagerLinkUrl = "https://projects.akshayrathi.com/task-manager/";
 const portfolioLinkUrl = "https://akshayrathi.com/";
@@ -98,7 +100,7 @@ reactNativeCalculatorGithub.addEventListener("click", () => {
 
 /* Taxi Sharing Platform */
 taxiSharingPlatformLink.addEventListener("click", () => {
-  window.open(taxiSharingPlatformLink, "_blank");
+  window.open(taxiSharingPlatformLinkUrl, "_blank");
 });
 taxiSharingPlatformGithub.addEventListener("click", () => {
   window.open(taxiSharingPlatformGithubLink, "_blank");
@@ -126,3 +128,14 @@ githubProfileLink.addEventListener("click", () => {
 linkedinLink.addEventListener("click", () => {
   window.open(linkedinLinkUrl, "_blank");
 });
+
+// api call
+const fetchData = async () => {
+  const BACKEND_API_URL = "https://backend.akshayrathi.com";
+  const query = "/analytics?moduleName=PROJECTS_LIST";
+  const url = BACKEND_API_URL + query;
+  const response = await fetch(url);
+  const data = await response.json();
+};
+
+fetchData();
