@@ -1,11 +1,11 @@
 # Projects List
 
 A list of personal projects developed by Akshay Rathi.<br> Design heavily inspired from <a href="https://brittanychiang.com/">Brittany Chiang.</a>'s Archive Project List<br>
-The Project is live at <a href="https://projects.akshayrathi.com/socket-io-app/" target="_blank">link</a>
+The Project is live at <a href="https://projects.akshayrathi.com" target="_blank">link</a>
 
 ## Project Screen Shot(s)
 
-<img src="./static/screenshot.png">
+<img src="./src/static/screenshot.png">
 
 ## Project List
 
